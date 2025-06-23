@@ -102,7 +102,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-transparent" />
           
-          <div className="relative h-full flex flex-col justify-center items-center text-white">
+          <div className="relative h-full flex flex-col justify-center items-end pr-24 text-white">
             <div className="text-center">
               <h2 className="text-6xl font-light tracking-wider">SELL</h2>
             </div>
@@ -111,7 +111,7 @@ function App() {
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-24 h-24 rounded-full border border-slate-400/60 backdrop-blur-md bg-white/10"></div>
+          <div className="w-48 h-48 rounded-full border-2 border-slate-400/60 backdrop-blur-md bg-white/10 shadow-2xl"></div>
         </div>
 
         {/* Buy Section */}
@@ -124,7 +124,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/70 via-slate-800/60 to-transparent" />
           
-          <div className="relative h-full flex flex-col justify-center items-center text-white">
+          <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
               <h2 className="text-6xl font-light tracking-wider">BUY</h2>
             </div>
