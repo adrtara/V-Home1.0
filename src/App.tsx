@@ -137,7 +137,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/70 via-slate-800/60 to-transparent" />
           
-          <div className="relative h-full flex-col justify-center items-start pl-24 text-white">
+          <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
               <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">BUY</h2>
             </div>
