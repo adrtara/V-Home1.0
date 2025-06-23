@@ -90,12 +90,12 @@ function App() {
         </div>
       </nav>
 
-      {/* Split Hero Section */}
-      <div className="h-screen flex relative">
+      {/* Split Hero Section with White Frame */}
+      <div className="h-screen flex relative pt-16 px-6 pb-6 bg-white">
         {/* Sell Section */}
-        <div className="relative w-1/2 overflow-hidden cursor-pointer group">
+        <div className="relative w-1/2 overflow-hidden cursor-pointer group mr-3">
           <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
               backgroundImage: 'url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
             }}
@@ -104,14 +104,14 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-end pr-24 text-white">
             <div className="text-center">
-              <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">SELL</h2>
+              <h2 className="text-3xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">SELL</h2>
             </div>
           </div>
         </div>
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-32 h-32 relative">
+          <div className="w-24 h-24 relative">
             {/* Rotating circle with cuts */}
             <div 
               className="w-full h-full backdrop-blur-md bg-white/10 shadow-2xl animate-spin"
@@ -128,9 +128,9 @@ function App() {
         </div>
 
         {/* Buy Section */}
-        <div className="relative w-1/2 overflow-hidden cursor-pointer group">
+        <div className="relative w-1/2 overflow-hidden cursor-pointer group ml-3">
           <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
               backgroundImage: 'url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
             }}
@@ -139,7 +139,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
-              <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">BUY</h2>
+              <h2 className="text-3xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">BUY</h2>
             </div>
           </div>
         </div>
