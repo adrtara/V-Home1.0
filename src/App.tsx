@@ -95,7 +95,7 @@ function App() {
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
             style={{
               backgroundImage: 'url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
             }}
@@ -104,20 +104,20 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-end pr-24 text-white">
             <div className="text-center">
-              <h2 className="text-6xl font-light tracking-wider">SELL</h2>
+              <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">SELL</h2>
             </div>
           </div>
         </div>
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-48 h-48 rounded-full border-2 border-slate-400/60 backdrop-blur-md bg-white/10 shadow-2xl"></div>
+          <div className="w-32 h-32 rounded-full border-2 border-slate-400/60 backdrop-blur-md bg-white/10 shadow-2xl"></div>
         </div>
 
         {/* Buy Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
             style={{
               backgroundImage: 'url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
             }}
@@ -126,7 +126,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
-              <h2 className="text-6xl font-light tracking-wider">BUY</h2>
+              <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">BUY</h2>
             </div>
           </div>
         </div>
