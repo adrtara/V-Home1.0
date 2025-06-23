@@ -91,7 +91,7 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex pt-16 relative">
+      <div className="h-screen flex relative">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
