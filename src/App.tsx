@@ -111,7 +111,20 @@ function App() {
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-32 h-32 rounded-full border-2 border-slate-400/60 backdrop-blur-md bg-white/10 shadow-2xl"></div>
+          <div className="w-32 h-32 relative">
+            {/* Rotating circle with cuts */}
+            <div 
+              className="w-full h-full backdrop-blur-md bg-white/10 shadow-2xl animate-spin"
+              style={{
+                borderRadius: '50%',
+                border: '2px solid rgba(148, 163, 184, 0.6)',
+                borderTopColor: 'transparent',
+                borderBottomColor: 'transparent',
+                animationDuration: '8s',
+                animationTimingFunction: 'linear'
+              }}
+            />
+          </div>
         </div>
 
         {/* Buy Section */}
@@ -124,7 +137,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/70 via-slate-800/60 to-transparent" />
           
-          <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
+          <div className="relative h-full flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
               <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">BUY</h2>
             </div>
