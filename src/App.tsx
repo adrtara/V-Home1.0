@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Lateral Frames */}
-      <div className="fixed top-0 left-0 w-16 h-full bg-white border-b border-slate-200 z-40" />
-      <div className="fixed top-0 right-0 w-16 h-full bg-white border-b border-slate-200 z-40" />
+      <div className="fixed top-0 left-0 w-24 h-full bg-white border-b border-slate-200 z-40" />
+      <div className="fixed top-0 right-0 w-24 h-full bg-white border-b border-slate-200 z-40" />
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-16 right-16 z-50 bg-white border-b border-slate-200">
+      <nav className="fixed top-0 left-24 right-24 z-50 bg-white border-b border-slate-200">
         <div className="max-w-8xl mx-auto px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <div className="text-2xl font-light text-slate-800 tracking-wide">
               Prestige Digital
@@ -95,7 +95,7 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex relative px-16">
+      <div className="h-screen flex relative px-24">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
@@ -116,16 +116,24 @@ function App() {
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-40 h-40 relative">
+            {/* Glow effect */}
+            <div 
+              className="absolute inset-0 w-full h-full rounded-full bg-white/30 blur-xl animate-pulse"
+              style={{
+                animationDuration: '3s'
+              }}
+            />
             {/* Rotating circle with cuts */}
             <div 
-              className="w-full h-full backdrop-blur-xl bg-white/15 shadow-2xl animate-spin"
+              className="relative w-full h-full backdrop-blur-xl bg-white/90 shadow-2xl animate-spin"
               style={{
                 borderRadius: '50%',
-                border: '3px solid rgba(148, 163, 184, 0.7)',
+                border: '3px solid white',
                 borderTopColor: 'transparent',
                 borderBottomColor: 'transparent',
                 animationDuration: '8s',
-                animationTimingFunction: 'linear'
+                animationTimingFunction: 'linear',
+                boxShadow: '0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 90px rgba(255, 255, 255, 0.2)'
               }}
             />
           </div>
