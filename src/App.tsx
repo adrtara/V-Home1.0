@@ -10,9 +10,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Lateral Frames */}
+      <div className="fixed top-0 left-0 w-8 h-full bg-white/95 backdrop-blur-sm border-r border-slate-200 z-40" />
+      <div className="fixed top-0 right-0 w-8 h-full bg-white/95 backdrop-blur-sm border-l border-slate-200 z-40" />
+
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6">
+      <nav className="fixed top-0 left-8 right-8 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+        <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="text-2xl font-light text-slate-800 tracking-wide">
@@ -57,7 +61,7 @@ function App() {
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden bg-white border-t border-slate-200`}>
-          <div className="px-6 py-4 space-y-4">
+          <div className="px-8 py-4 space-y-4">
             <a 
               href="#home" 
               className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
@@ -91,11 +95,11 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex relative">
+      <div className="h-screen flex relative px-8">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
               backgroundImage: 'url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
             }}
@@ -104,14 +108,14 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-end pr-24 text-white">
             <div className="text-center">
-              <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">SELL</h2>
+              <h2 className="text-3xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">SELL</h2>
             </div>
           </div>
         </div>
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-32 h-32 relative">
+          <div className="w-24 h-24 relative">
             {/* Rotating circle with cuts */}
             <div 
               className="w-full h-full backdrop-blur-md bg-white/10 shadow-2xl animate-spin"
@@ -130,7 +134,7 @@ function App() {
         {/* Buy Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
               backgroundImage: 'url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
             }}
@@ -139,7 +143,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
-              <h2 className="text-4xl font-light tracking-wider transition-transform duration-700 ease-out group-hover:scale-90">BUY</h2>
+              <h2 className="text-3xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">BUY</h2>
             </div>
           </div>
         </div>
