@@ -116,9 +116,9 @@ function App() {
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-40 h-40 relative">
-            {/* Glow effect */}
+            {/* Static glow effect - doesn't rotate */}
             <div 
-              className="absolute inset-0 w-full h-full rounded-full bg-white/30 blur-xl animate-pulse"
+              className="absolute inset-0 w-full h-full rounded-full bg-white/20 blur-lg animate-pulse"
               style={{
                 animationDuration: '3s'
               }}
@@ -132,8 +132,7 @@ function App() {
                 borderTopColor: 'transparent',
                 borderBottomColor: 'transparent',
                 animationDuration: '8s',
-                animationTimingFunction: 'linear',
-                boxShadow: '0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 90px rgba(255, 255, 255, 0.2)'
+                animationTimingFunction: 'linear'
               }}
             />
           </div>
