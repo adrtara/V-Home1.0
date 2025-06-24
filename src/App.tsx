@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Lateral Frames */}
-      <div className="fixed top-0 left-0 w-8 h-full bg-white/95 backdrop-blur-sm border-r border-slate-200 z-40" />
-      <div className="fixed top-0 right-0 w-8 h-full bg-white/95 backdrop-blur-sm border-l border-slate-200 z-40" />
+      <div className="fixed top-0 left-0 w-16 h-full bg-white/95 backdrop-blur-sm z-40" />
+      <div className="fixed top-0 right-0 w-16 h-full bg-white/95 backdrop-blur-sm z-40" />
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-8 right-8 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+      <nav className="fixed top-0 left-16 right-16 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -95,7 +95,7 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex relative px-8">
+      <div className="h-screen flex relative px-16">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
@@ -108,20 +108,20 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-end pr-24 text-white">
             <div className="text-center">
-              <h2 className="text-3xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">SELL</h2>
+              <h2 className="text-6xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">SELL</h2>
             </div>
           </div>
         </div>
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-24 h-24 relative">
+          <div className="w-40 h-40 relative">
             {/* Rotating circle with cuts */}
             <div 
-              className="w-full h-full backdrop-blur-md bg-white/10 shadow-2xl animate-spin"
+              className="w-full h-full backdrop-blur-xl bg-white/15 shadow-2xl animate-spin"
               style={{
                 borderRadius: '50%',
-                border: '2px solid rgba(148, 163, 184, 0.6)',
+                border: '3px solid rgba(148, 163, 184, 0.7)',
                 borderTopColor: 'transparent',
                 borderBottomColor: 'transparent',
                 animationDuration: '8s',
@@ -143,7 +143,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
             <div className="text-center">
-              <h2 className="text-3xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">BUY</h2>
+              <h2 className="text-6xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">BUY</h2>
             </div>
           </div>
         </div>
