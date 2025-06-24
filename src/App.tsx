@@ -123,9 +123,9 @@ function App() {
                 animationDuration: '3s'
               }}
             />
-            {/* Rotating circle with cuts */}
+            {/* Rotating circle with cuts and blur effect */}
             <div 
-              className="relative w-full h-full backdrop-blur-xl bg-white/90 shadow-2xl animate-spin"
+              className="relative w-full h-full backdrop-blur-md animate-spin"
               style={{
                 borderRadius: '50%',
                 border: '3px solid white',
