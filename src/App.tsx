@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import gemelloImage from './assets/Gemello Da Polso.jpg';
+import valigettaImage from './assets/Valigetta.jpg';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -101,7 +103,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: 'url(src/assets/Valigetta.jpg)'
+              backgroundImage: `url(${valigettaImage})`
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
@@ -135,7 +137,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: 'url(src/assets/Gemello Da Polso.jpg)'
+              backgroundImage: `url(${gemelloImage})`
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
