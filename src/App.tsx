@@ -118,15 +118,13 @@ function App() {
           <div className="w-48 h-48 relative">
             {/* Rotating circle with cuts, blur effect, and rotating glow */}
             <div 
-              className="relative w-full h-full backdrop-blur-md animate-spin animate-pulse-glow"
+              className="relative w-full h-full backdrop-blur-md"
               style={{
                 borderRadius: '50%',
                 border: '4px solid white',
                 borderTopColor: 'transparent',
                 borderBottomColor: 'transparent',
-                animationDuration: '8s, 3s',
-                animationTimingFunction: 'linear, ease-in-out',
-                animationIterationCount: 'infinite, infinite'
+                animation: 'spin 8s linear infinite, pulse-glow 3s ease-in-out infinite'
               }}
             />
           </div>
