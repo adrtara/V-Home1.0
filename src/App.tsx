@@ -101,7 +101,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: 'url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
+              backgroundImage: 'url(src/assets/Gemello Da Polso.png)'
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-transparent" />
