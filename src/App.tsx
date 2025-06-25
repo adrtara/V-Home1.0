@@ -135,10 +135,10 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: 'url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
+              backgroundImage: 'url(src/assets/Gemello Da Polso.jpg)'
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/70 via-slate-800/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
           <div className="relative h-full flex flex-col justify-center items-start pl-32 text-white">
             <div className="text-center">
