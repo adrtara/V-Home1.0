@@ -101,10 +101,10 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: 'url(src/assets/Valigetta 2 copy.png)'
+              backgroundImage: 'url(src/assets/Valigetta.jpg)'
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
           <div className="relative h-full flex flex-col justify-center items-end pr-32 text-white">
             <div className="text-center">
