@@ -101,7 +101,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: 'url(src/assets/Gemello Da Polso.png)'
+              backgroundImage: 'url(src/assets/Valigetta 2 copy.png)'
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-transparent" />
