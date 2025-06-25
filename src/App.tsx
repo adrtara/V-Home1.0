@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Lateral Frames */}
-      <div className="fixed top-0 left-0 w-24 h-full bg-white border-b border-slate-200 z-40" />
-      <div className="fixed top-0 right-0 w-24 h-full bg-white border-b border-slate-200 z-40" />
+      <div className="fixed top-0 left-0 w-32 h-full bg-slate-50 z-40" />
+      <div className="fixed top-0 right-0 w-32 h-full bg-slate-50 z-40" />
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-24 right-24 z-50 bg-white border-b border-slate-200">
+      <nav className="fixed top-0 left-32 right-32 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
@@ -60,7 +60,7 @@ function App() {
         {/* Mobile Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-        } overflow-hidden bg-white border-t border-slate-200`}>
+        } overflow-hidden bg-slate-50 border-t border-slate-200`}>
           <div className="px-8 py-4 space-y-4">
             <a 
               href="#home" 
@@ -95,7 +95,7 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex relative px-24">
+      <div className="h-screen flex relative px-32">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
@@ -106,34 +106,27 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-transparent" />
           
-          <div className="relative h-full flex flex-col justify-center items-end pr-24 text-white">
+          <div className="relative h-full flex flex-col justify-center items-end pr-32 text-white">
             <div className="text-center">
-              <h2 className="text-6xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">SELL</h2>
+              <h2 className="text-8xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">SELL</h2>
             </div>
           </div>
         </div>
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-40 h-40 relative">
-            {/* Glow effect */}
+          <div className="w-48 h-48 relative">
+            {/* Rotating circle with cuts, blur effect, and rotating glow */}
             <div 
-              className="absolute inset-0 w-full h-full rounded-full bg-white/30 blur-xl animate-pulse"
-              style={{
-                animationDuration: '3s'
-              }}
-            />
-            {/* Rotating circle with cuts and blur effect */}
-            <div 
-              className="relative w-full h-full backdrop-blur-md animate-spin"
+              className="relative w-full h-full backdrop-blur-md animate-spin animate-pulse-glow"
               style={{
                 borderRadius: '50%',
-                border: '3px solid white',
+                border: '4px solid white',
                 borderTopColor: 'transparent',
                 borderBottomColor: 'transparent',
-                animationDuration: '8s',
-                animationTimingFunction: 'linear',
-                boxShadow: '0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 90px rgba(255, 255, 255, 0.2)'
+                animationDuration: '8s, 3s',
+                animationTimingFunction: 'linear, ease-in-out',
+                animationIterationCount: 'infinite, infinite'
               }}
             />
           </div>
@@ -149,9 +142,9 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/70 via-slate-800/60 to-transparent" />
           
-          <div className="relative h-full flex flex-col justify-center items-start pl-24 text-white">
+          <div className="relative h-full flex flex-col justify-center items-start pl-32 text-white">
             <div className="text-center">
-              <h2 className="text-6xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">BUY</h2>
+              <h2 className="text-8xl font-light tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">BUY</h2>
             </div>
           </div>
         </div>
