@@ -97,7 +97,7 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex relative px-32">
+      <div className="h-[calc(100vh-6rem)] flex relative px-32 pt-24">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
@@ -118,7 +118,7 @@ function App() {
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-48 h-48 relative">
-            {/* Optimized rotating circle with reduced blur and simplified glow */}
+            {/* Optimized rotating circle with enhanced glow */}
             <div 
               className="relative w-full h-full backdrop-blur-sm"
               style={{
