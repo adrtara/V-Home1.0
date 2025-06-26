@@ -11,15 +11,11 @@
   }
 }
 
-@keyframes pulse-glow {
+@keyframes optimized-glow {
   0%, 100% {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) 
-            drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)) 
-            drop-shadow(0 0 30px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.7));
   }
   50% {
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)) 
-            drop-shadow(0 0 30px rgba(255, 255, 255, 0.8)) 
-            drop-shadow(0 0 45px rgba(255, 255, 255, 0.6));
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
   }
 }

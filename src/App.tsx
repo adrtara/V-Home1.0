@@ -118,15 +118,15 @@ function App() {
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-48 h-48 relative">
-            {/* Rotating circle with cuts, blur effect, and rotating glow */}
+            {/* Optimized rotating circle with reduced blur and simplified glow */}
             <div 
-              className="relative w-full h-full backdrop-blur-md"
+              className="relative w-full h-full backdrop-blur-sm"
               style={{
                 borderRadius: '50%',
                 border: '4px solid white',
                 borderTopColor: 'transparent',
                 borderBottomColor: 'transparent',
-                animation: 'spin 8s linear infinite, pulse-glow 3s ease-in-out infinite'
+                animation: 'spin 8s linear infinite, optimized-glow 3s ease-in-out infinite'
               }}
             />
           </div>
