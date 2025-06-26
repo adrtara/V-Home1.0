@@ -118,7 +118,7 @@ function App() {
 
         {/* Central Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-48 h-40 relative">
+          <div className="w-48 h-48 relative">
             {/* Optimized rotating circle with reduced blur and simplified glow */}
             <div 
               className="relative w-full h-full backdrop-blur-sm"
