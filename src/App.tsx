@@ -38,7 +38,7 @@ function App() {
                 Workflow
               </a>
               <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
-                Prices and Plans
+                Prezzi e Piani
               </a>
             </div>
 
