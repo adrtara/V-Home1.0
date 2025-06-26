@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import gemelloImage from './assets/Gemello Da Polso.jpg';
 import valigettaImage from './assets/Valigetta.jpg';
+import logoImage from './assets/Logo Senza Sfondo.png';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,22 +22,22 @@ function App() {
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <div className="text-2xl font-light text-slate-800 tracking-wide">
+            <div className="text-2xl font-dm-serif-text text-slate-800 tracking-wide">
               Prestige Digital
             </div>
             
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
+              <a href="#home" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text">
                 Home
               </a>
-              <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
-                About Us
+              <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text flex items-center">
+                About <img src={logoImage} alt="Logo" className="inline-block h-6 ml-1 align-middle" />
               </a>
-              <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
+              <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text">
                 Workflow
               </a>
-              <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
+              <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text">
                 Prices and Plans
               </a>
             </div>
@@ -66,28 +67,28 @@ function App() {
           <div className="px-8 py-4 space-y-4">
             <a 
               href="#home" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </a>
             <a 
               href="#about" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text flex items-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About Us
+              About <img src={logoImage} alt="Logo" className="inline-block h-5 ml-1 align-middle" />
             </a>
             <a 
               href="#workflow" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Workflow
             </a>
             <a 
               href="#pricing" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Prices and Plans
