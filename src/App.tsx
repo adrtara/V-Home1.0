@@ -23,7 +23,7 @@ function App() {
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <div className="text-2xl font-light text-slate-800 tracking-wide">
-              Prestige Digital
+              Vospra
             </div>
             
             {/* Desktop Navigation Links */}
