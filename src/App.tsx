@@ -22,22 +22,22 @@ function App() {
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <div className="text-2xl font-dm-serif-text text-slate-800 tracking-wide">
+            <div className="text-2xl font-light text-slate-800 tracking-wide">
               Prestige Digital
             </div>
             
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text">
+              <a href="#home" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                 Home
               </a>
-              <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text flex items-center">
-                About <img src={logoImage} alt="Logo" className="inline-block h-6 ml-1 align-middle" />
+              <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center">
+                About <img src={logoImage} alt="Logo" className="inline-block h-7 ml-1 align-middle" />
               </a>
-              <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text">
+              <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                 Workflow
               </a>
-              <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 font-dm-serif-text">
+              <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                 Prices and Plans
               </a>
             </div>
@@ -67,28 +67,28 @@ function App() {
           <div className="px-8 py-4 space-y-4">
             <a 
               href="#home" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </a>
             <a 
               href="#about" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text flex items-center"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 flex items-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About <img src={logoImage} alt="Logo" className="inline-block h-5 ml-1 align-middle" />
+              About <img src={logoImage} alt="Logo" className="inline-block h-6 ml-1 align-middle" />
             </a>
             <a 
               href="#workflow" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Workflow
             </a>
             <a 
               href="#pricing" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 font-dm-serif-text"
+              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Prices and Plans
