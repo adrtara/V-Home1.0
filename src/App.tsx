@@ -35,7 +35,7 @@ function App() {
                 About <img src={logoImage} alt="Logo" className="inline-block h-7 ml-1 align-middle" />
               </a>
               <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
-                Workflow
+                Metodo
               </a>
               <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                 Prezzi e Piani
