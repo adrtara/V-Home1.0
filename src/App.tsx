@@ -38,7 +38,7 @@ function App() {
                Il Metodo
               </a>
               <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
-                Prezzi e Piani
+                Piani
               </a>
             </div>
 
