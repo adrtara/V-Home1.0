@@ -27,12 +27,12 @@ function App() {
             </div>
             
             {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-12">
               <a href="#home" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                 Home
               </a>
               <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center">
-                About <img src={logoImage} alt="Logo" className="inline-block h-9 ml-1 align-middle" />
+                About <img src={logoImage} alt="Logo" className="inline-block h-10 ml-1 align-middle" />
               </a>
               <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                Il Metodo
@@ -98,7 +98,7 @@ function App() {
       </nav>
 
       {/* Split Hero Section */}
-      <div className="h-screen flex relative px-32">
+      <div className="mt-24 h-[calc(100vh-6rem)] flex relative px-32">
         {/* Sell Section */}
         <div className="relative w-1/2 overflow-hidden cursor-pointer group">
           <div 
