@@ -79,7 +79,7 @@ function App() {
               className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 flex items-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About <img src={logoImage} alt="Logo" className="inline-block h-6 ml-1 align-middle" />
+              About <img src={logoImage} alt="Logo" className="inline-block h-3 ml-1 align-middle" />
             </a>
             <a 
               href="#workflow" 
