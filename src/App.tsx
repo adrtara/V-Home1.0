@@ -3,6 +3,7 @@ import { X } from 'lucide-react';
 import gemelloImage from './assets/Gemello Da Polso.jpg';
 import valigettaImage from './assets/Valigetta.jpg';
 import logoImage from './assets/Logo Senza Sfondo.png';
+import vLogoImage from './assets/Logo Senza Sfondo copy.png';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,8 +23,9 @@ function App() {
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <div className="text-2xl font-light text-slate-800 tracking-wide">
-              Vospra
+            <div className="text-2xl font-light text-slate-800 tracking-wide flex items-center">
+              <img src={vLogoImage} alt="V Logo" className="inline-block h-6 align-middle mr-1" />
+              <span>ospra</span>
             </div>
             
             {/* Desktop Navigation Links */}
