@@ -24,7 +24,7 @@ function App() {
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <div className="text-2xl font-light text-slate-800 tracking-wide flex items-center">
-              <img src={vLogoImage} alt="V Logo" className="inline-block h-5 align-middle" />
+              <img src={vLogoImage} alt="V Logo" className="inline-block h-5 mr-1 align-middle" />
               <span>ospra</span>
             </div>
             
