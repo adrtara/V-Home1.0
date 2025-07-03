@@ -23,7 +23,7 @@ function App() {
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <div className="text-2xl font-zain text-slate-800 h-10 tracking-wide flex items-center">
+            <div className="text-2xl font-zain text-slate-800 tracking-wide flex items-center">
               <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle" />
               <span>
                 ospra
