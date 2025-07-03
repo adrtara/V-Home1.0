@@ -27,7 +27,7 @@ function App() {
               <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle" />
               <span>
                 <div className="text-2xl font-prompt text-slate-800 tracking-wide flex items-center">
-                </div>
+                </div> ospra
               </span>
             </div>
             
