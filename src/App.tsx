@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Lateral Frames */}
-      <div className="fixed top-0 left-0 w-32 h-full bg-slate-50 z-40" />
-      <div className="fixed top-0 right-0 w-32 h-full bg-slate-50 z-40" />
+      <div className="fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
+      <div className="fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-32 right-32 z-50 bg-slate-50">
+      <nav className="fixed top-0 left-24 right-24 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
