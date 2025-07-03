@@ -34,7 +34,7 @@ function App() {
                 Home
               </a>
               <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center">
-                About <img src={logoImage} alt="Logo" className="inline-block h-3 ml-1 align-middle" />
+                About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-1 align-middle" />
               </a>
               <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
                Il Metodo
