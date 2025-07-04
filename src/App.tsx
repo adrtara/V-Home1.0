@@ -118,7 +118,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-end pr-32 text-white">
             <div className="text-center">
-              <h2 className="text-5xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">VENDI</h2>
+              <h2 className="text-5xl font-zain tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">VENDI</h2>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-start pl-32 text-white">
             <div className="text-center">
-              <h2 className="text-5xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">ACQUISTA</h2>
+              <h2 className="text-5xl font-zain tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">ACQUISTA</h2>
             </div>
           </div>
         </div>
