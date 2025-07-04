@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import gemelloImage from './assets/Gemello Da Polso.jpg';
-import valigettaImage from './assets/Valigetta.jpg';
 import logoImage from './assets/Logo Senza Sfondo copy copy.png';
 import vLogoImage from './assets/Logo Senza Sfondo copy copy.png';
 import cravattaImage from './assets/Cravatta Con Logo.jpg'
