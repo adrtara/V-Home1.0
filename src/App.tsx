@@ -3,7 +3,6 @@ import { X } from 'lucide-react';
 import gemelloImage from './assets/Gemello Da Polso.jpg';
 import logoImage from './assets/Logo Senza Sfondo copy copy.png';
 import vLogoImage from './assets/Logo Senza Sfondo copy copy.png';
-import cravattaImage from './assets/Cravatta Con Logo.jpg'
 import bigliettoImage from './assets/Biglietto Da Visita 1.jpg'
 
 
