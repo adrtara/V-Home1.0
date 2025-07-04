@@ -4,6 +4,7 @@ import gemelloImage from './assets/Gemello Da Polso.jpg';
 import logoImage from './assets/Logo Senza Sfondo copy copy.png';
 import vLogoImage from './assets/Logo Senza Sfondo copy copy.png';
 import cravattaImage from './assets/Cravatta Con Logo.jpg'
+import bigliettoImage from './assets/Biglietto Da Visita 1.jpg'
 
 
 function App() {
@@ -109,7 +110,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: `url(${cravattaImage})`
+              backgroundImage: `url(${bigliettoImage})`
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
