@@ -111,7 +111,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
-              backgroundImage: `url(${bigliettoImage})`
+              backgroundImage: `url(${aereoImage})`
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
