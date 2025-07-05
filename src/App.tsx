@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Lateral Frames - Hidden on mobile, visible on desktop */}
-      <div className="hidden 1g:block fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
-      <div className="hidden 1g:block fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
+      <div className="hidden md:block fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
+      <div className="hidden md:block fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
 
       {/* Navigation Bar - Full width on mobile, with lateral margins on desktop */}
       <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-slate-50">
