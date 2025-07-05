@@ -39,7 +39,7 @@ function App() {
             
             {/* Center Phrase - Absolutely positioned to center */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 text-2xl font-zain text-slate-800 tracking-wide">
-            Per chi fa sul serio.
+            Per chi vuole contare.
             </div>
             
             {/* Desktop Navigation Links - Pushed to the right */}
