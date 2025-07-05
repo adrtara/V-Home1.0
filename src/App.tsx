@@ -21,12 +21,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Lateral Frames */}
-      <div className="fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
-      <div className="fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
+      {/* Lateral Frames - Hidden on mobile, visible on desktop */}
+      <div className="hidden md:block fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
+      <div className="hidden md:block fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
 
-      {/* Navigation Bar */}
-      <nav className="fixed top-0 left-24 right-24 z-50 bg-slate-50">
+      {/* Navigation Bar - Full width on mobile, with lateral margins on desktop */}
+      <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
@@ -156,10 +156,10 @@ function App() {
         </div>
       </nav>
 
-      {/* Split Hero Section */}
-      <div className="mt-24 h-[calc(100vh-6rem)] flex relative px-24">
-        {/* Sell Section */}
-        <div className="relative w-1/2 overflow-hidden cursor-pointer group">
+      {/* Hero Section - Vertical stack on mobile, horizontal on desktop */}
+      <div className="mt-24 min-h-[calc(100vh-6rem)] md:h-[calc(100vh-6rem)] flex flex-col md:flex-row relative px-4 md:px-24">
+        {/* Market Section */}
+        <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
@@ -168,14 +168,14 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
-          <div className="relative h-full flex flex-col justify-center items-end pr-32 text-white">
+          <div className="relative h-full flex flex-col justify-center items-center md:items-end pr-0 md:pr-32 text-white">
             <div className="text-center">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">MARKET</h2>
             </div>
           </div>
         </div>
 
-        {/* Central Circle */}
+        {/* Central Circle - Positioned absolutely to stay centered */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-48 h-48 relative">
             {/* Optimized rotating circle with reduced blur and simplified glow */}
@@ -192,8 +192,8 @@ function App() {
           </div>
         </div>
 
-        {/* Buy Section */}
-        <div className="relative w-1/2 overflow-hidden cursor-pointer group">
+        {/* Advisory Section */}
+        <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
@@ -202,7 +202,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
-          <div className="relative h-full flex flex-col justify-center items-start pl-32 text-white">
+          <div className="relative h-full flex flex-col justify-center items-center md:items-start pl-0 md:pl-32 text-white">
             <div className="text-center">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">ADVISORY</h2>
             </div>
