@@ -37,6 +37,11 @@ function App() {
               </span>
             </div>
             
+            {/* Center Phrase - Hidden on mobile, visible on desktop */}
+            <div className="hidden md:block text-2xl font-zain text-slate-800 tracking-wide">
+              Per Chi Non Delega Il Proprio Destino.
+            </div>
+            
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-12">
               <a 
