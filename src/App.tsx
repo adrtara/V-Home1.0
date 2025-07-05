@@ -33,7 +33,7 @@ function App() {
             <div className="text-3xl font-zain text-slate-800 tracking-wide flex items-center">
               <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle" />
               <span className="relative top-[6px]"> 
-                ospra. Domina Il Cambiamento
+                ospra. Domina Il Cambiamento.
               </span>
             </div>
             
