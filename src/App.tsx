@@ -6,13 +6,17 @@ import vLogoImage from './assets/Logo Senza Sfondo copy copy.png';
 import bigliettoImage from './assets/Biglietto Da Visita 1.jpg';
 import aereoImage from './assets/Jet MotionBlur.jpg';
 
-
-
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleNavClick = (section: string) => {
+    setActiveSection(section);
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -35,16 +39,48 @@ function App() {
             
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-12">
-              <a href="#home" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
+              <a 
+                href="#home" 
+                onClick={() => handleNavClick('home')}
+                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                  activeSection === 'home' 
+                    ? 'border-slate-900 text-slate-900' 
+                    : 'border-transparent'
+                }`}
+              >
                 Home
               </a>
-              <a href="#about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center">
+              <a 
+                href="#about" 
+                onClick={() => handleNavClick('about')}
+                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center pb-1 border-b-2 ${
+                  activeSection === 'about' 
+                    ? 'border-slate-900 text-slate-900' 
+                    : 'border-transparent'
+                }`}
+              >
                 About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle" />
               </a>
-              <a href="#workflow" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
+              <a 
+                href="#workflow" 
+                onClick={() => handleNavClick('workflow')}
+                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                  activeSection === 'workflow' 
+                    ? 'border-slate-900 text-slate-900' 
+                    : 'border-transparent'
+                }`}
+              >
                Il Metodo
               </a>
-              <a href="#pricing" className="text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200">
+              <a 
+                href="#pricing" 
+                onClick={() => handleNavClick('pricing')}
+                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                  activeSection === 'pricing' 
+                    ? 'border-slate-900 text-slate-900' 
+                    : 'border-transparent'
+                }`}
+              >
                 Piani
               </a>
             </div>
@@ -74,31 +110,47 @@ function App() {
           <div className="px-8 py-4 space-y-4">
             <a 
               href="#home" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => handleNavClick('home')}
+              className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
+                activeSection === 'home' 
+                  ? 'border-slate-900 text-slate-900 bg-slate-100' 
+                  : 'border-transparent text-slate-600 hover:text-slate-900'
+              }`}
             >
               Home
             </a>
             <a 
               href="#about" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2 flex items-center"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => handleNavClick('about')}
+              className={`block font-medium transition-colors duration-200 py-2 flex items-center border-l-4 pl-4 ${
+                activeSection === 'about' 
+                  ? 'border-slate-900 text-slate-900 bg-slate-100' 
+                  : 'border-transparent text-slate-600 hover:text-slate-900'
+              }`}
             >
               About <img src={logoImage} alt="Logo" className="inline-block h-6 ml-1 align-middle" />
             </a>
             <a 
               href="#workflow" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => handleNavClick('workflow')}
+              className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
+                activeSection === 'workflow' 
+                  ? 'border-slate-900 text-slate-900 bg-slate-100' 
+                  : 'border-transparent text-slate-600 hover:text-slate-900'
+              }`}
             >
-              Workflow
+              Il Metodo
             </a>
             <a 
               href="#pricing" 
-              className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => handleNavClick('pricing')}
+              className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
+                activeSection === 'pricing' 
+                  ? 'border-slate-900 text-slate-900 bg-slate-100' 
+                  : 'border-transparent text-slate-600 hover:text-slate-900'
+              }`}
             >
-              Prices and Plans
+              Piani
             </a>
           </div>
         </div>
