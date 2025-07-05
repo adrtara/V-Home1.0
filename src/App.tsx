@@ -28,7 +28,7 @@ function App() {
       {/* Navigation Bar - Full width on mobile, with lateral margins on desktop */}
       <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
-          <div className="flex items-center justify-between h-24">
+          <div className="flex items-center justify-between h-24 relative">
             {/* Logo */}
             <div className="text-3xl font-zain text-slate-800 tracking-wide flex items-center">
               <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle" />
@@ -37,13 +37,13 @@ function App() {
               </span>
             </div>
             
-            {/* Center Phrase - Hidden on mobile, visible on desktop */}
-            <div className="hidden md:block text-2xl font-zain text-slate-800 tracking-wide">
+            {/* Center Phrase - Absolutely positioned to center */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 text-2xl font-zain text-slate-800 tracking-wide">
               Per Chi Non Delega Il Proprio Destino.
             </div>
             
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-12">
+            {/* Desktop Navigation Links - Pushed to the right */}
+            <div className="hidden md:flex items-center space-x-12 ml-auto">
               <a 
                 href="#home" 
                 onClick={() => handleNavClick('home')}
