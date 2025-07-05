@@ -39,7 +39,7 @@ function App() {
             
             {/* Center Phrase - Absolutely positioned to center */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 text-2xl font-zain text-slate-800 tracking-wide">
-              Per chi trasforma l’ambizione in autorevolezza.
+             Il riconoscimento di chi non accetta limiti.
             </div>
             
             {/* Desktop Navigation Links - Pushed to the right */}
