@@ -28,77 +28,80 @@ function App() {
       {/* Navigation Bar - Full width on mobile, with lateral margins on desktop */}
       <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
-          <div className="flex items-center justify-between h-24">
-            {/* Logo */}
-            <div className="text-3xl font-zain text-slate-800 tracking-wide flex items-center">
+          <div className="flex items-center h-24 relative">
+            {/* Logo - Centered */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 text-3xl font-zain text-slate-800 tracking-wide flex items-center">
               <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle" />
               <span className="relative top-[6px]"> 
                 ospra. <span className="text-xl">Per Chi Non Delega Il Proprio Destino.</span>
               </span>
             </div>
             
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-12">
-              <a 
-                href="#home" 
-                onClick={() => handleNavClick('home')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
-                  activeSection === 'home' 
-                    ? 'border-slate-900 text-slate-900' 
-                    : 'border-transparent'
-                }`}
-              >
-                Home
-              </a>
-              <a 
-                href="#about" 
-                onClick={() => handleNavClick('about')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center pb-1 border-b-2 ${
-                  activeSection === 'about' 
-                    ? 'border-slate-900 text-slate-900' 
-                    : 'border-transparent'
-                }`}
-              >
-                About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle" />
-              </a>
-              <a 
-                href="#workflow" 
-                onClick={() => handleNavClick('workflow')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
-                  activeSection === 'workflow' 
-                    ? 'border-slate-900 text-slate-900' 
-                    : 'border-transparent'
-                }`}
-              >
-               Il Metodo
-              </a>
-              <a 
-                href="#pricing" 
-                onClick={() => handleNavClick('pricing')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
-                  activeSection === 'pricing' 
-                    ? 'border-slate-900 text-slate-900' 
-                    : 'border-transparent'
-                }`}
-              >
-                Piani
-              </a>
-            </div>
+            {/* Navigation Links and Mobile Menu - Right aligned */}
+            <div className="flex items-center ml-auto">
+              {/* Desktop Navigation Links */}
+              <div className="hidden md:flex items-center space-x-12">
+                <a 
+                  href="#home" 
+                  onClick={() => handleNavClick('home')}
+                  className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                    activeSection === 'home' 
+                      ? 'border-slate-900 text-slate-900' 
+                      : 'border-transparent'
+                  }`}
+                >
+                  Home
+                </a>
+                <a 
+                  href="#about" 
+                  onClick={() => handleNavClick('about')}
+                  className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center pb-1 border-b-2 ${
+                    activeSection === 'about' 
+                      ? 'border-slate-900 text-slate-900' 
+                      : 'border-transparent'
+                  }`}
+                >
+                  About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle" />
+                </a>
+                <a 
+                  href="#workflow" 
+                  onClick={() => handleNavClick('workflow')}
+                  className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                    activeSection === 'workflow' 
+                      ? 'border-slate-900 text-slate-900' 
+                      : 'border-transparent'
+                  }`}
+                >
+                 Il Metodo
+                </a>
+                <a 
+                  href="#pricing" 
+                  onClick={() => handleNavClick('pricing')}
+                  className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                    activeSection === 'pricing' 
+                      ? 'border-slate-900 text-slate-900' 
+                      : 'border-transparent'
+                  }`}
+                >
+                  Piani
+                </a>
+              </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button 
-                onClick={toggleMobileMenu}
-                className="text-slate-600 hover:text-slate-900 transition-colors duration-200"
-              >
-                {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
+              {/* Mobile Menu Button */}
+              <div className="md:hidden">
+                <button 
+                  onClick={toggleMobileMenu}
+                  className="text-slate-600 hover:text-slate-900 transition-colors duration-200"
+                >
+                  {isMobileMenuOpen ? (
+                    <X className="w-6 h-6" />
+                  ) : (
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
         </div>
