@@ -110,9 +110,14 @@ function App() {
 
         {/* Mobile Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden bg-slate-50 border-t border-slate-200`}>
           <div className="px-8 py-4 space-y-4">
+            {/* Center Phrase for Mobile */}
+            <div className="text-center text-xl font-zain text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
+              Per chi lascia il segno.
+            </div>
+            
             <a 
               href="#home" 
               onClick={() => handleNavClick('home')}
