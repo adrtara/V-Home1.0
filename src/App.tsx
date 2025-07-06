@@ -39,7 +39,7 @@ function App() {
             
             {/* Center Phrase - Absolutely positioned to center */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 text-2xl font-zain text-slate-800 tracking-wide">
-            Per chi lascia il segno.
+            Più in alto.
             </div>
             
             {/* Desktop Navigation Links - Pushed to the right */}
@@ -115,7 +115,7 @@ function App() {
           <div className="px-8 py-4 space-y-4">
             {/* Center Phrase for Mobile */}
             <div className="text-center text-xl font-zain text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
-              Per chi lascia il segno.
+              Più in alto.
             </div>
             
             <a 
