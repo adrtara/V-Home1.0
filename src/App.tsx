@@ -31,7 +31,7 @@ function App() {
           <div className="flex items-center justify-between h-24 relative">
             {/* Logo */}
             <div className="text-3xl font-zain text-slate-800 tracking-wide flex items-center">
-              <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle relative -translate-y-1.1" />
+              <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle relative -translate-y-0.5" />
               <span> 
                 ospra
               </span>
