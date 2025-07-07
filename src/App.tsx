@@ -64,7 +64,7 @@ function App() {
                     : 'border-transparent'
                 }`}
               >
-                About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-1 align-middle" />
+                About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle" />
               </a>
               <a 
                 href="#workflow" 
