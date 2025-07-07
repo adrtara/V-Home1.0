@@ -33,7 +33,7 @@ function App() {
             <div className="text-3xl font-zain text-slate-800 tracking-wide flex items-center">
               <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 align-middle relative -translate-y-1" />
               <span> 
-                ospra
+                ospra.
               </span>
             </div>
             
