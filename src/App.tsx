@@ -85,7 +85,7 @@ function App() {
                     : 'border-transparent'
                 }`}
               >
-                Piani
+                Pantheon
               </a>
             </div>
 
