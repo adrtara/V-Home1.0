@@ -215,7 +215,7 @@ function App() {
           <div className="relative h-full flex flex-col justify-center items-center md:items-start pl-0 md:pl-32 text-white">
             <div className="text-center md:text-left">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">VOSPRA <br /> STUDIO</h2>
-              <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">La tua visione, la nostra guida</p>
+              <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">Soluzioni strategiche per business digitali ambiziosi.</p>
             </div>
           </div>
         </div>
