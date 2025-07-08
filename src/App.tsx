@@ -213,8 +213,7 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center items-center md:items-start pl-0 md:pl-32 text-white">
             <div className="text-center">
-              <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">STUDIO 
-                STRATEGICO</h2>
+              <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90">STUDIO STRATEGICO</h2>
             </div>
           </div>
         </div>
