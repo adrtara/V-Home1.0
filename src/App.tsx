@@ -3,7 +3,6 @@ import { X } from 'lucide-react';
 import gemelloImage from './assets/Gemello Da Polso.jpg';
 import logoImage from './assets/Logo Senza Sfondo copy copy.png';
 import vLogoImage from './assets/Logo Senza Sfondo copy copy.png';
-import bigliettoImage from './assets/Biglietto Da Visita 1.jpg';
 import aereoImage from './assets/Jet MotionBlur.jpg';
 
 function App() {
