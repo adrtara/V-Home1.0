@@ -85,7 +85,7 @@ function App() {
                     : 'border-transparent'
                 }`}
               >
-                Pantheon
+                V-Class
               </a>
             </div>
 
