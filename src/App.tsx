@@ -212,8 +212,8 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
-          <div className="relative h-full text-white">
-            <div className="text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 md:text-left md:left-32 md:translate-x-0">
+          <div className="relative h-full text-white flex items-center justify-center md:justify-start">
+            <div className="text-center md:text-left md:ml-32">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">VOSPRA <br /> STUDIO</h2>
               <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center">Soluzioni strategiche per business<br />digitali ambiziosi.</p>
             </div>
