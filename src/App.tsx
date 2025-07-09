@@ -179,8 +179,8 @@ function App() {
           
           <div className="relative h-full flex flex-col justify-center md:items-end pr-0 md:pr-32 text-white">
             <div className="text-center md:text-right ">
-              <h2 className="text-4xl font-dm-serif-text tracking-wider my-auto transition-transform duration-1000 ease-out group-hover:scale-90 text-center">MARKET</h2>
-              <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center">La vetrina selettiva per acquistare <br /> o vendere valore.</p>
+              <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">MARKET</h2>
+              <p className="text-xl font-dm-serif-text my-auto mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center">La vetrina selettiva per acquistare <br /> o vendere valore.</p>
             </div>
           </div>
         </div>
