@@ -177,8 +177,8 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
-          <div className="relative h-full flex flex-col justify-center md:items-end pr-0 md:pr-32 text-white">
-            <div className="text-center md:text-right">
+          <div className="relative h-full flex flex-col justify-center items-center text-white">
+            <div className="text-center">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">MARKET</h2>
               <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center">La vetrina selettiva per acquistare <br /> o vendere valore.</p>
             </div>
@@ -212,8 +212,8 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
-          <div className="relative h-full flex flex-col justify-center md:items-start pl-0 md:pl-32 text-white">
-            <div className="text-center md:text-left">
+          <div className="relative h-full flex flex-col justify-center items-center text-white">
+            <div className="text-center">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">VOSPRA <br /> STUDIO</h2>
               <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center">Soluzioni strategiche per business<br />digitali ambiziosi.</p>
             </div>
