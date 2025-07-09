@@ -178,7 +178,7 @@ function App() {
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
           <div className="relative text-white z-10">
-            <div className="text-center md:text-right md:mr-32 relative">
+            <div className="text-center md:text-right md:mr-40 relative">
               <h2 className="text-4xl font-dm-serif-text tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">MARKET</h2>
               <p className="text-xl font-dm-serif-text mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">La vetrina selettiva per acquistare <br /> o vendere valore.</p>
             </div>
