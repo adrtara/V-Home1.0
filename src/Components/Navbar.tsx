@@ -25,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="hidden md:block fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
       <div className="hidden md:block fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
       {/* Navigation Bar - Full width */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-50">
+      <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24 relative">
             {/* Logo */}
