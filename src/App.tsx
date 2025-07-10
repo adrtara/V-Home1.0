@@ -27,7 +27,7 @@ function App() {
 
       {/* Navigation Bar - Full width on mobile, with lateral margins on desktop */}
     <Navbar 
-    currentPath="/ "
+    currentPath="/home "
     isMobileMenuOpen={isMobileMenuOpen}
     toggleMobileMenu={toggleMobileMenu}
     handleNavClick={handleNavClick}
