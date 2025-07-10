@@ -164,7 +164,6 @@ const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
       </nav>
-    </div>
     </>
   );
 };
