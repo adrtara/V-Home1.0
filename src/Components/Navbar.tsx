@@ -1,9 +1,9 @@
 import React from 'react';
 import { X } from 'lucide-react'; // Assicurati di avere lucide-react installato
 
-// Importa le tue immagini (dovrai aggiustare i path)
-import vLogoImage from '../assets/v-logo.png'; // Adatta il path
-import logoImage from '../assets/logo.png'; // Adatta il path
+// Importa le tue immagini
+import logoImage from '../assets/Logo Senza Sfondo copy copy.png';
+import vLogoImage from '../assets/Logo Senza Sfondo copy copy.png';
 
 interface NavbarProps {
   activeSection: string;
