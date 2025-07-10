@@ -63,7 +63,7 @@ function App() {
                     : 'border-transparent'
                 }`}
               >
-                About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
+                About <img src={vLogoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
               </a>
               <a 
                 href="#workflow" 
