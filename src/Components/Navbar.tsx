@@ -19,7 +19,11 @@ const Navbar: React.FC<NavbarProps> = ({
   handleNavClick 
 }) => {
   return (
-    <>
+    <> 
+       <div className="min-h-screen bg-white md:overflow-hidden">
+      {/* Lateral Frames - Hidden on mobile, visible on desktop */}
+      <div className="hidden md:block fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
+      <div className="hidden md:block fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
       {/* Navigation Bar - Full width */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
