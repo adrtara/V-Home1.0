@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import Navbar from './Components/Navbar';
 import gemelloImage from './assets/Gemello Da Polso.jpg';
 import logoImage from './assets/Logo Senza Sfondo copy copy.png';
 import vLogoImage from './assets/Logo Senza Sfondo copy copy.png';
