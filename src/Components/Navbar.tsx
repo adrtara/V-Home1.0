@@ -6,26 +6,37 @@ import logoImage from '../assets/Logo Senza Sfondo copy copy.png';
 import vLogoImage from '../assets/Logo Senza Sfondo copy copy.png';
 
 interface NavbarProps {
-  activeSection: string;
+  currentPath?: string; // Nuovo prop per determinare la sezione attiva
   isMobileMenuOpen: boolean;
   toggleMobileMenu: () => void;
   handleNavClick: (section: string) => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ 
-  activeSection, 
+  currentPath = '/', 
   isMobileMenuOpen, 
   toggleMobileMenu, 
   handleNavClick 
 }) => {
+  // Funzione per determinare se una sezione è attiva
+  const isActiveSection = (section: string) => {
+    switch (section) {
+      case 'home':
+        return currentPath === '/' || currentPath === '/home';
+      case 'about':
+        return currentPath === '/about';
+      case 'workflow':
+        return currentPath === '/workflow' || currentPath === '/metodo';
+      case 'pricing':
+        return currentPath === '/pricing' || currentPath === '/vclass';
+      default:
+        return false;
+    }
+  };
   return (
-    <> 
-    
-      {/* Lateral Frames - Hidden on mobile, visible on desktop */}
-      <div className="hidden md:block fixed top-0 left-0 w-24 h-full bg-slate-50 z-40" />
-      <div className="hidden md:block fixed top-0 right-0 w-24 h-full bg-slate-50 z-40" />
+    <>
       {/* Navigation Bar - Full width */}
-      <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-slate-50">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-50">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24 relative">
             {/* Logo */}
@@ -47,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 href="#home" 
                 onClick={() => handleNavClick('home')}
                 className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
-                  activeSection === 'home' 
+                  isActiveSection('home') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
                 }`}
@@ -58,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 href="#about" 
                 onClick={() => handleNavClick('about')}
                 className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center pb-1 border-b-2 ${
-                  activeSection === 'about' 
+                  isActiveSection('about') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
                 }`}
@@ -69,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 href="#workflow" 
                 onClick={() => handleNavClick('workflow')}
                 className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
-                  activeSection === 'workflow' 
+                  isActiveSection('workflow') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
                 }`}
@@ -80,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 href="#pricing" 
                 onClick={() => handleNavClick('pricing')}
                 className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
-                  activeSection === 'pricing' 
+                  isActiveSection('pricing') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
                 }`}
@@ -121,7 +132,7 @@ const Navbar: React.FC<NavbarProps> = ({
               href="#home" 
               onClick={() => handleNavClick('home')}
               className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
-                activeSection === 'home' 
+                isActiveSection('home') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
@@ -132,7 +143,7 @@ const Navbar: React.FC<NavbarProps> = ({
               href="#about" 
               onClick={() => handleNavClick('about')}
               className={`block font-medium transition-colors duration-200 py-2 flex items-center border-l-4 pl-4 ${
-                activeSection === 'about' 
+                isActiveSection('about') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
@@ -143,7 +154,7 @@ const Navbar: React.FC<NavbarProps> = ({
               href="#workflow" 
               onClick={() => handleNavClick('workflow')}
               className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
-                activeSection === 'workflow' 
+                isActiveSection('workflow') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
@@ -154,7 +165,7 @@ const Navbar: React.FC<NavbarProps> = ({
               href="#pricing" 
               onClick={() => handleNavClick('pricing')}
               className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
-                activeSection === 'pricing' 
+                isActiveSection('pricing') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
