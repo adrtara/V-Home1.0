@@ -148,7 +148,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
             >
-              About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle" />
+              About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
             </a>
             <a 
               href="#workflow" 
