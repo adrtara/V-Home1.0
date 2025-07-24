@@ -71,7 +71,7 @@ function App() {
         </div>
 
         {/* Advisory Section */}
-        <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-start">
+        <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-start z-1">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
