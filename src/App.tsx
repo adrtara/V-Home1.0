@@ -74,7 +74,7 @@ function App() {
 
         {/* Hover-blocking circular area */}
         <div 
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 z-50 pointer-events-auto"
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 z-50 pointer-events-auto"
           style={{
             borderRadius: '50%',
             WebkitMaskImage: 'radial-gradient(circle, white 99%, transparent 100%)',
