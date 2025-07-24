@@ -6,7 +6,7 @@ export default {
       
       colors: {
 
-         'text-mid-gray': '#6F6F6F',
+         'text-mid-gray': '#6B7280',
       fontFamily: {
         // Font personalizzati
         'dm-serif-text': ['DM Serif Text', 'serif'],
