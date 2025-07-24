@@ -1,9 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react'; // Assicurati di avere lucide-react installato
 
-// Importa le tue immagini
-import logoImage from '../assets/Logo Senza Sfondo copy copy.png';
-import vLogoImage from '../assets/Logo Senza Sfondo copy copy.png';
 
 interface NavbarProps {
   currentPath?: string; // Nuovo prop per determinare la sezione attiva
@@ -38,22 +35,38 @@ const Navbar: React.FC<NavbarProps> = ({
       {/* Navigation Bar - Full width */}
       <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-[#fbfbf5]">
         <div className="max-w-8xl mx-auto px-8">
-          <div className="flex items-center justify-between h-24 relative">
+          <div className="flex items-center justify-between h-24 lg:grid lg:grid-cols-3">
             {/* Logo */}
-            <div className="text-3xl font-zain text-slate-800 tracking-wide flex items-center">
-              <img src={vLogoImage} alt="V Logo" className="inline-block h-6 -mr-1 relative -translate-y-1.5" />
+            <div className="text-[23px] font-medium text-slate-800 tracking-wide flex items-center">
+              <img src="https://i.postimg.cc/BnjzvK3Z/Logo-Senza-Sfondo.png" alt="V Logo" className="inline-block h-6 -translate-y-1 -mr-1 relative" />
               <span> 
                 ospra.
               </span>
             </div>
             
-            {/* Center Phrase - Absolutely positioned to center */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 text-2xl font-zain text-slate-800 tracking-wide">
-            Più in alto.
+            {/* Mobile Menu Button - Solo visibile su mobile */}
+            <div className="lg:hidden">
+              <button 
+                onClick={toggleMobileMenu}
+                className="text-slate-600 hover:text-slate-900 transition-colors duration-200"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+              </button>
             </div>
             
-            {/* Desktop Navigation Links - Pushed to the right */}
-            <div className="hidden md:flex items-center space-x-12 ml-auto">
+            {/* Center Phrase - Seconda colonna */}
+            <div className="hidden lg:block italic text-center text-[19px] font-medium text-slate-800 tracking-wide">
+              Più in alto.
+            </div>
+            
+            {/* Desktop Navigation Links - Terza colonna */}
+            <div className="hidden lg:flex items-center space-x-12 justify-end">
               <a 
                 href="#home" 
                 onClick={() => handleNavClick('home')}
@@ -74,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     : 'border-transparent'
                 }`}
               >
-                About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
+                About <img src="https://i.postimg.cc/BnjzvK3Z/Logo-Senza-Sfondo.png" alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
               </a>
               <a 
                 href="#workflow" 
@@ -99,32 +112,16 @@ const Navbar: React.FC<NavbarProps> = ({
                 V-Class
               </a>
             </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button 
-                onClick={toggleMobileMenu}
-                className="text-slate-600 hover:text-slate-900 transition-colors duration-200"
-              >
-                {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
-            </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out ${
+        <div className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
-        } overflow-hidden bg-slate-50 border-t border-slate-200`}>
+        } overflow-hidden bg-[#fbfbf5] border-t border-slate-200`}>
           <div className="px-8 py-4 space-y-4">
             {/* Center Phrase for Mobile */}
-            <div className="text-center text-xl font-zain text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
+            <div className="text-center text-[17px] italic font-medium text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
               Più in alto.
             </div>
             
@@ -148,7 +145,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
             >
-              About <img src={logoImage} alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
+              About <img src="https://i.postimg.cc/BnjzvK3Z/Logo-Senza-Sfondo.png" alt="Logo" className="inline-block h-4 ml-2 align-middle -translate-y-0.5" />
             </a>
             <a 
               href="#workflow" 
