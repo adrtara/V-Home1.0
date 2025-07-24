@@ -25,30 +25,30 @@ function App() {
       <div className="hidden md:block fixed top-0 left-0 w-24 h-full bg-[#fbfbf5] z-40" />
       <div className="hidden md:block fixed top-0 right-0 w-24 h-full bg-[#fbfbf5] z-40" />
 
-      {/* Navigation Bar - Full width on mobile, with lateral margins on desktop */}
-    <Navbar 
-    currentPath="/"
-    isMobileMenuOpen={isMobileMenuOpen}
-    toggleMobileMenu={toggleMobileMenu}
-    handleNavClick={handleNavClick}
-  />
+      {/* Navigation Bar */}
+      <Navbar 
+        currentPath="/"
+        isMobileMenuOpen={isMobileMenuOpen}
+        toggleMobileMenu={toggleMobileMenu}
+        handleNavClick={handleNavClick}
+      />
 
-      {/* Hero Section - Vertical stack on mobile, horizontal on desktop */}
+      {/* Hero Section */}
       <div className="mt-24 min-h-[calc(100vh-6rem)] md:h-[calc(100vh-6rem)] flex flex-col md:flex-row relative px-4 md:px-24">
+        
         {/* Market Section */}
         <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-end z-1">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
-            style={{
-              backgroundImage: `url(${aereoImage})`
-            }}
+            style={{ backgroundImage: `url(${aereoImage})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
-          
           <div className="relative text-white z-10">
             <div className="text-center md:text-right md:mr-40 relative">
               <h2 className="text-3xl font-serif tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">MARKET</h2>
-              <p className="text-xl font-serif mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">La vetrina selettiva per <br /> acquistare o vendere valore.</p>
+              <p className="text-xl font-serif mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">
+                La vetrina selettiva per <br /> acquistare o vendere valore.
+              </p>
             </div>
           </div>
         </div>
@@ -57,27 +57,34 @@ function App() {
         <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-start z-1">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
-            style={{
-              backgroundImage: `url(${gemelloImage})`
-            }}
+            style={{ backgroundImage: `url(${gemelloImage})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
-          
           <div className="relative text-white z-10">
             <div className="text-center md:text-left md:ml-40 relative">
-              <h2 className="text-3xl font-serif tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">VOSPRA <br /> STUDIO</h2>
-              <p className="text-xl font-serif mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">Soluzioni strategiche per <br />business digitali.</p>
+              <h2 className="text-3xl font-serif tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">
+                VOSPRA <br /> STUDIO
+              </h2>
+              <p className="text-xl font-serif mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">
+                Soluzioni strategiche per <br />business digitali.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Hover blocking area - positioned above everything */}
-        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 z-50 pointer-events-auto"></div>
+        {/* Hover-blocking circular area */}
+        <div 
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 z-50 pointer-events-auto"
+          style={{
+            borderRadius: '50%',
+            WebkitMaskImage: 'radial-gradient(circle, white 99%, transparent 100%)',
+            maskImage: 'radial-gradient(circle, white 99%, transparent 100%)'
+          }}
+        ></div>
 
-        {/* Central Circle - Positioned absolutely to stay centered */}
+        {/* Central Rotating Circle */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="w-48 h-48 relative">
-            {/* Optimized rotating circle with reduced blur and simplified glow */}
             <div 
               className="relative w-full h-full backdrop-blur-sm"
               style={{
