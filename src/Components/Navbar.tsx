@@ -81,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <a 
                 href="#about" 
                 onClick={() => handleNavClick('about')}
-                className={`text-slate-600 hover:text-slate-900 font-semibold transition-colors duration-200 flex items-center pb-1 border-b-2 ${
+                className={`text-slate-600 hover:text-slate-900 font-normal transition-colors duration-200 flex items-center pb-1 border-b-2 ${
                   isActiveSection('about') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
