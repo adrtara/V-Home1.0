@@ -36,7 +36,7 @@ function App() {
       {/* Hero Section - Vertical stack on mobile, horizontal on desktop */}
       <div className="mt-24 min-h-[calc(100vh-6rem)] md:h-[calc(100vh-6rem)] flex flex-col md:flex-row relative px-4 md:px-24">
         {/* Market Section */}
-        <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-end">
+        <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-end z-1">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-105"
             style={{
