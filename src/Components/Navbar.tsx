@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24 lg:grid lg:grid-cols-3">
             {/* Logo */}
-            <div className="text-[23px] font-medium text-slate-800 tracking-wide flex items-center">
+            <div className="text-[23px] font-zain text-slate-800 tracking-wide flex items-center">
               <img src="https://i.postimg.cc/BnjzvK3Z/Logo-Senza-Sfondo.png" alt="V Logo" className="inline-block h-6 -translate-y-1 -mr-1 relative" />
               <span> 
                 ospra.
