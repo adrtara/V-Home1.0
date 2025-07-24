@@ -10,6 +10,7 @@ export default {
         // Font personalizzati
         'dm-serif-text': ['DM Serif Text', 'serif'],
         'zain': ['Zain', 'sans-serif'],
+        'serif': ['Playfair Display', 'serif'],
         
         // Override dei font di default per renderli più sottili
         'serif': ['Playfair Display', 'serif'],
