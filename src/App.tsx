@@ -53,23 +53,6 @@ function App() {
           </div>
         </div>
 
-        {/* Central Circle - Positioned absolutely to stay centered */}
-        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-48 h-48 relative">
-            {/* Optimized rotating circle with reduced blur and simplified glow */}
-            <div 
-              className="relative w-full h-full backdrop-blur-sm"
-              style={{
-                borderRadius: '50%',
-                border: '4px solid white',
-                borderTopColor: 'transparent',
-                borderBottomColor: 'transparent',
-                animation: 'spin 8s linear infinite, optimized-glow 3s ease-in-out infinite'
-              }}
-            />
-          </div>
-        </div>
-
         {/* Advisory Section */}
         <div className="relative w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden cursor-pointer group flex items-center justify-center md:justify-start z-1">
           <div 
@@ -85,6 +68,26 @@ function App() {
               <h2 className="text-3xl font-serif tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">VOSPRA <br /> STUDIO</h2>
               <p className="text-xl font-serif mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">Soluzioni strategiche per <br />business digitali.</p>
             </div>
+          </div>
+        </div>
+
+        {/* Hover blocking area - positioned above everything */}
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 z-50 pointer-events-auto"></div>
+
+        {/* Central Circle - Positioned absolutely to stay centered */}
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+          <div className="w-48 h-48 relative">
+            {/* Optimized rotating circle with reduced blur and simplified glow */}
+            <div 
+              className="relative w-full h-full backdrop-blur-sm"
+              style={{
+                borderRadius: '50%',
+                border: '4px solid white',
+                borderTopColor: 'transparent',
+                borderBottomColor: 'transparent',
+                animation: 'spin 8s linear infinite, optimized-glow 3s ease-in-out infinite'
+              }}
+            />
           </div>
         </div>
       </div>
