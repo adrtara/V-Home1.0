@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
             
             {/* Center Phrase - Seconda colonna */}
-            <div className="hidden lg:block italic text-center text-[19px] font-medium text-slate-800 tracking-wide">
+            <div className="hidden lg:block text-center text-[19px] font-medium text-slate-800 tracking-wide">
               Più in alto.
             </div>
             
