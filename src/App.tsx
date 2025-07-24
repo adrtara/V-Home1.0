@@ -45,9 +45,6 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-700/50" />
           
-          {/* Blocking area for center circle in Market section */}
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 h-32 z-20 pointer-events-auto"></div>
-          
           <div className="relative text-white z-10">
             <div className="text-center md:text-right md:mr-40 relative">
               <h2 className="text-3xl font-serif tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">MARKET</h2>
@@ -82,9 +79,6 @@ function App() {
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/80 via-slate-800/70 to-slate-700/50" />
-          
-          {/* Blocking area for center circle in Vospra section */}
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-32 h-32 z-20 pointer-events-auto"></div>
           
           <div className="relative text-white z-10">
             <div className="text-center md:text-left md:ml-40 relative">
