@@ -55,8 +55,6 @@ function App() {
 
         {/* Central Circle - Positioned absolutely to stay centered */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          {/* Invisible larger area to block hover events consistently */}
-          <div className="absolute inset-0 w-64 h-64 -translate-x-8 -translate-y-8"></div>
           <div className="w-48 h-48 relative">
             {/* Optimized rotating circle with reduced blur and simplified glow */}
             <div 
