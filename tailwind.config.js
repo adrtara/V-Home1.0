@@ -18,6 +18,9 @@ export default {
         
       },
     },
+     screens: {
+    'lg': '1040px',
+  },
   },
   plugins: [],
 };
