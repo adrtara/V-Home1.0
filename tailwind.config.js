@@ -14,7 +14,8 @@ export default {
         
         // Override dei font di default per renderli più sottili
         'serif': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'sans-serif'],
+        'sans': ['Manrope', 'sans-serif'],
+        
       },
     },
   },
