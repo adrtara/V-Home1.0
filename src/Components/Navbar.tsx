@@ -121,7 +121,7 @@ const Navbar: React.FC<NavbarProps> = ({
         } overflow-hidden bg-[#fbfbf5] border-t border-slate-200`}>
           <div className="px-8 py-4 space-y-4">
             {/* Center Phrase for Mobile */}
-            <div className="text-center text-[17px] italic font-medium text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
+            <div className="text-center text-[16px] italic font-semibold text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
               Più in alto.
             </div>
             
