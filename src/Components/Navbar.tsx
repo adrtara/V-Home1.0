@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       {/* Navigation Bar - Full width */}
-      <nav className="fixed top-0 left-0 right-0 lg:left-24 lg:right-24 z-50 bg-[#fbfbf5]">
+      <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-[#fbfbf5]">
         <div className="max-w-8xl mx-auto px-8">
           <div className="flex items-center justify-between h-24 lg:grid lg:grid-cols-3">
             {/* Logo */}
