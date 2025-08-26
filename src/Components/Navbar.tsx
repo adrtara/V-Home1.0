@@ -98,7 +98,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     : 'border-transparent'
                 }`}
               >
-               Il Metodo
+               Percorso
               </a>
               <a 
                 href="#pricing" 
