@@ -156,7 +156,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
             >
-              Il Metodo
+              Percorso
             </a>
             <a 
               href="#pricing" 
