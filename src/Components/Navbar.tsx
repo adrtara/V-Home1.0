@@ -33,8 +33,8 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       {/* Navigation Bar - Full width */}
-      <nav className="fixed top-0 left-0 right-0 md:left-24 md:right-24 z-50 bg-[#fbfbf5]">
-        <div className="max-w-8xl mx-auto px-8">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fbfbf5]">
+        <div className="max-w-8xl mx-auto px-8 md:px-32">
           <div className="flex items-center justify-between h-24 lg:grid lg:grid-cols-3">
             {/* Logo */}
             <div className="text-[28px] font-zain text-slate-800 tracking-wide flex items-center">
@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
             
             {/* Center Phrase - Seconda colonna */}
-            <div className="hidden lg:block italic text-center text-[18px] font-semibold text-slate-800 tracking-wide">
+            <div className="hidden lg:block italic text-center text-[18px] font-manrope font-semibold text-slate-800 tracking-wide">
               Più in alto.
             </div>
             
@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <a 
                 href="#home" 
                 onClick={() => handleNavClick('home')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                className={`text-slate-600 hover:text-slate-900 font-medium font-manrope transition-colors duration-200 pb-1 border-b-2 ${
                   isActiveSection('home') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
@@ -81,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <a 
                 href="#about" 
                 onClick={() => handleNavClick('about')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 flex items-center pb-1 border-b-2 ${
+                className={`text-slate-600 hover:text-slate-900 font-medium font-manrope transition-colors duration-200 flex items-center pb-1 border-b-2 ${
                   isActiveSection('about') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <a 
                 href="#workflow" 
                 onClick={() => handleNavClick('workflow')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                className={`text-slate-600 hover:text-slate-900 font-medium font-manrope transition-colors duration-200 pb-1 border-b-2 ${
                   isActiveSection('workflow') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
@@ -103,7 +103,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <a 
                 href="#pricing" 
                 onClick={() => handleNavClick('pricing')}
-                className={`text-slate-600 hover:text-slate-900 font-medium transition-colors duration-200 pb-1 border-b-2 ${
+                className={`text-slate-600 hover:text-slate-900 font-medium font-manrope transition-colors duration-200 pb-1 border-b-2 ${
                   isActiveSection('pricing') 
                     ? 'border-slate-900 text-slate-900' 
                     : 'border-transparent'
@@ -121,14 +121,14 @@ const Navbar: React.FC<NavbarProps> = ({
         } overflow-hidden bg-[#fbfbf5] border-t border-slate-200`}>
           <div className="px-8 py-4 space-y-4">
             {/* Center Phrase for Mobile */}
-            <div className="text-center text-[16px] italic font-semibold text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
+            <div className="text-center text-[16px] italic font-semibold font-manrope text-slate-800 tracking-wide mb-6 pb-4 border-b border-slate-200">
               Più in alto.
             </div>
             
             <a 
               href="#home" 
               onClick={() => handleNavClick('home')}
-              className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
+              className={`block font-medium font-manrope transition-colors duration-200 py-2 border-l-4 pl-4 ${
                 isActiveSection('home') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
@@ -139,7 +139,7 @@ const Navbar: React.FC<NavbarProps> = ({
             <a 
               href="#about" 
               onClick={() => handleNavClick('about')}
-              className={`block font-medium transition-colors duration-200 py-2 flex items-center border-l-4 pl-4 ${
+              className={`block font-medium font-manrope transition-colors duration-200 py-2 flex items-center border-l-4 pl-4 ${
                 isActiveSection('about') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
@@ -150,18 +150,18 @@ const Navbar: React.FC<NavbarProps> = ({
             <a 
               href="#workflow" 
               onClick={() => handleNavClick('workflow')}
-              className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
+              className={`block font-medium font-manrope transition-colors duration-200 py-2 border-l-4 pl-4 ${
                 isActiveSection('workflow') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
               }`}
             >
-              Percorso
+             Percorso
             </a>
             <a 
               href="#pricing" 
               onClick={() => handleNavClick('pricing')}
-              className={`block font-medium transition-colors duration-200 py-2 border-l-4 pl-4 ${
+              className={`block font-medium font-manrope transition-colors duration-200 py-2 border-l-4 pl-4 ${
                 isActiveSection('pricing') 
                   ? 'border-slate-900 text-slate-900 bg-slate-100' 
                   : 'border-transparent text-slate-600 hover:text-slate-900'
