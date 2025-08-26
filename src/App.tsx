@@ -65,7 +65,7 @@ function App() {
               <h2 className="text-3xl font-serif tracking-wider transition-transform duration-1000 ease-out group-hover:scale-90 text-center">
                 VOSPRA <br /> STUDIO
               </h2>
-              <p className="text-xl font-serif mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">
+              <p className="text-xl font-sans mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-center md:absolute md:top-full md:left-1/2 md:transform md:-translate-x-1/2 md:mt-2 md:whitespace-nowrap">
                 Soluzioni strategiche per <br />business digitali.
               </p>
             </div>
